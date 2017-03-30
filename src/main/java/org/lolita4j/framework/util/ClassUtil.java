@@ -36,7 +36,7 @@ public final class ClassUtil {
         try {
             cls = Class.forName(className, isInitialized, getClassLoader());
         } catch (ClassNotFoundException e) {
-            LOGGER.error("找不到类", e);
+            LOGGER.error("load class failure", e);
             throw new RuntimeException(e);
         }
         return cls;
@@ -76,7 +76,7 @@ public final class ClassUtil {
                 }
             }
         } catch (Exception e) {
-            LOGGER.error("获取类失败", e);
+            LOGGER.error("get class set failure", e);
             throw new RuntimeException(e);
         }
         return classSet;

@@ -31,13 +31,13 @@ public final class PropsUtil {
             properties = new Properties();
             properties.load(inputStream);
         } catch (IOException e) {
-            LOGGER.error("关闭输入异常", e);
+            LOGGER.error("close input stream failure", e);
         } finally {
             if (inputStream != null) {
                 try {
                     inputStream.close();
                 } catch (IOException e) {
-                    LOGGER.error("关闭输入异常", e);
+                    LOGGER.error("close input stream failure", e);
                 }
             }
         }
