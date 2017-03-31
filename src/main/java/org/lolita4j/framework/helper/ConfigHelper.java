@@ -1,5 +1,6 @@
-package org.lolita4j.framework.config;
+package org.lolita4j.framework.helper;
 
+import org.lolita4j.framework.ConfigConstant;
 import org.lolita4j.framework.util.PropsUtil;
 
 import java.util.Properties;

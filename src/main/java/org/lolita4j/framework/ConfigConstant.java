@@ -1,4 +1,4 @@
-package org.lolita4j.framework.config;
+package org.lolita4j.framework;
 
 /**
  * 提供相关配置项常量

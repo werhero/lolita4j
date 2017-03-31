@@ -1,8 +1,9 @@
-package org.lolita4j.framework.util;
+package org.lolita4j.framework.helper;
 
 import org.lolita4j.framework.anno.Controller;
 import org.lolita4j.framework.anno.Service;
-import org.lolita4j.framework.config.ConfigHelper;
+import org.lolita4j.framework.helper.ConfigHelper;
+import org.lolita4j.framework.util.ClassUtil;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -36,7 +37,7 @@ public final class ClassHelper {
      */
     public static Set<Class<?>> getServiceClassSet() {
         Set<Class<?>> classSet = new HashSet<Class<?>>();
-        for (Class<?> cls : classSet) {
+        for (Class<?> cls : CLASS_SET) {
             if (cls.isAnnotationPresent(Service.class)) {
                 classSet.add(cls);
             }
@@ -49,7 +50,7 @@ public final class ClassHelper {
      */
     public static Set<Class<?>> getControllerClassSet() {
         Set<Class<?>> classSet = new HashSet<Class<?>>();
-        for (Class<?> cls : classSet) {
+        for (Class<?> cls : CLASS_SET) {
             if (cls.isAnnotationPresent(Controller.class)) {
                 classSet.add(cls);
             }

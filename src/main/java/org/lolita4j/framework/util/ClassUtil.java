@@ -27,6 +27,13 @@ public final class ClassUtil {
     public static ClassLoader getClassLoader() {
         return Thread.currentThread().getContextClassLoader();
     }
+    
+    /**
+     * 加载类（将自动初始化）
+     */
+    public static Class<?> loadClass(String className) {
+        return loadClass(className, true);
+    }
 
     /**
      * 加载类
