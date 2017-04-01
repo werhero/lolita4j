@@ -37,4 +37,22 @@ public class Request {
     public void setRequestPath(String requestPath) {
         this.requestPath = requestPath;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Request request = (Request) o;
+
+        if (!requestMethod.equals(request.requestMethod)) return false;
+        return requestPath.equals(request.requestPath);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = requestMethod.hashCode();
+        result = 31 * result + requestPath.hashCode();
+        return result;
+    }
 }
