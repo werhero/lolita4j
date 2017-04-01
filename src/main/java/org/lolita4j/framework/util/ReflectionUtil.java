@@ -2,7 +2,6 @@ package org.lolita4j.framework.util;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import sun.misc.VM;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;

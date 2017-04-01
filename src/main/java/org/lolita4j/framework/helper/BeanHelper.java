@@ -1,6 +1,5 @@
 package org.lolita4j.framework.helper;
 
-import org.lolita4j.framework.helper.ClassHelper;
 import org.lolita4j.framework.util.ReflectionUtil;
 
 import java.util.HashMap;
@@ -12,6 +11,7 @@ import java.util.Set;
  *
  * @author werhero
  */
+@SuppressWarnings("unchecked")
 public final class BeanHelper {
 
     /**
