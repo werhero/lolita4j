@@ -32,6 +32,6 @@ public final class ConfigHelper {
      * 获取应用静态资源路径
      */
     public static String getAppAssetPath() {
-        return PropsUtil.getString(CONFIG_PROPS, ConfigConstant.APP_ASSET_PATH);
+        return PropsUtil.getString(CONFIG_PROPS, ConfigConstant.APP_ASSET_PATH, "/WEB-INF/view/");
     }
 }

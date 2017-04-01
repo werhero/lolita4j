@@ -1,7 +1,6 @@
 package org.lolita4j.framework.helper;
 
 import org.lolita4j.framework.anno.Inject;
-import org.lolita4j.framework.helper.BeanHelper;
 import org.lolita4j.framework.util.ArrayUtil;
 import org.lolita4j.framework.util.CollectionUtil;
 import org.lolita4j.framework.util.ReflectionUtil;

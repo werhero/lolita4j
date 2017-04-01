@@ -14,10 +14,10 @@ import org.lolita4j.framework.util.ClassUtil;
 public final class HelperLoader {
     public static void init() {
         Class<?>[] classList = {
-                ClassHelper.class,
                 BeanHelper.class,
-                IocHelper.class,
-                ControllerHelper.class
+                ClassHelper.class,
+                ControllerHelper.class,
+                IocHelper.class
         };
         for (Class<?> cls : classList) {
             ClassUtil.loadClass(cls.getName());
