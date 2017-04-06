@@ -97,7 +97,7 @@ public final class CastUtil {
     }
 
     /**
-     * 转为boolean型(提供默认值)
+     * 转为boolean型
      */
     public static boolean castBoolean(Object obj) {
         return castBoolean(obj, false);
